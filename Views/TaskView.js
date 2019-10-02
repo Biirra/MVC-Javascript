@@ -84,9 +84,6 @@ class TaskView{
         this.$completeTaskButton.addEventListener("click", this.completeTaskButtonHandler);
         this.$deleteTaskButton.addEventListener("click", this.deleteTaskButtonHandler);
 
-        
-        //this.$container.on('click', '.js-task', this.selectOrUnselectTaskHandler);
-
         /**
          * Event Dispatcher
          */
@@ -113,7 +110,6 @@ class TaskView{
     }
     selectOrUnselectTask() {
         let taskIndex = event.target.getAttribute("data-index");
-        //$(event.target).attr("data-index");
         
         if (event.target.getAttribute('data-task-selected') == 'false') {
             event.target.getAttribute('data-task-selected', true);
